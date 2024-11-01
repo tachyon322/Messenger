@@ -1,10 +1,15 @@
-import Image from "next/image";
 import Button from "@/components/ui/Button";
 import { db } from "@/lib/db";
 
 export default async function Home() {
 
-  await db.set("hello", "world")
+  interface UserMock {
+    name: string
+  }
+
+  const user = {
+
+  }
 
   return (
     <div className="">
